@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(background.jpg), rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    width: 80%;
+    font-size: 18px !important;
+    transition: 0.5s ease;
+    cursor: pointer;
+    padding: 15px !important;
+    outline: none;
+    border: none !important;
+}
+
+h3:hover {
+    background: #000fe6 !important;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+button {
+    padding: 10px 20px !important;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    outline: none;
+    border: none !important;
+}
+
+button:hover {
+    background: #03c223 !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border: none;
+    transform: translateY(-5px);
+}
+
+canvas {
+    animation: color-changer 4s infinite;
+    margin-top: 100px;
+    border-radius: 5px;
+}
+
+@keyframes color-changer {
+    0% {
+        box-shadow: 1px 1px 38px red;
+    }
+
+    50% {
+        box-shadow: 1px 1px 38px yellow;
+    }
+
+    75% {
+        box-shadow: 1px 1px 38px yellow;
+    }
+
+    100% {
+        box-shadow: 1px 1px 38px red;
+    }
+}
